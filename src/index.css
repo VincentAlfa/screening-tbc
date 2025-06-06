@@ -6,7 +6,8 @@
 
 @theme {
   --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
-  --color-primary-green: #6ca74f;
+  --color-primary-green: #b0db9c;
+  --color-secondary-green: #ddf6d2;
 }
 
 @theme inline {

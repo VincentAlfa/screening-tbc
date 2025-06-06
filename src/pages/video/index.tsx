@@ -17,7 +17,7 @@ export default function Video() {
   };
 
   return (
-    <main className='flex w-full flex-col bg-gradient-to-b from-green-100 to-green-300 pt-16 pb-8'>
+    <main className='from-secondary-green to-primary-green flex w-full flex-col bg-gradient-to-b pt-16 pb-8'>
       <h1 className='mb-8 pt-8 text-center text-2xl font-bold'>
         VIDEO EDUKASI
       </h1>

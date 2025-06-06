@@ -36,7 +36,6 @@ const screeningFormSchema = z.object({
   rt: z.string().min(1, 'RT harus diisi'),
   rw: z.string().min(1, 'RW harus diisi'),
   no_handphone: z.string().min(1, 'Nomor handphone harus diisi'),
-  no_ktp: z.string().min(1, 'Nomor KTP/NIK harus diisi'),
   layanan_kesehatan: z.string().min(1, 'Layanan kesehatan harus dipilih'),
 
   batuk_dua_minggu: z.enum(['Ya', 'Tidak']),
@@ -121,17 +120,6 @@ export default function ScreeningForm() {
               <p className='mt-1 text-xs text-red-500'>{errors.usia.message}</p>
             )}
           </div>
-
-          <div>
-            <Label className='mb-1 block text-sm'>No. KTP/NIK</Label>
-            <Input {...register('no_ktp')} />
-            {errors.no_ktp && (
-              <p className='mt-1 text-xs text-red-500'>
-                {errors.no_ktp.message}
-              </p>
-            )}
-          </div>
-
           <div>
             <Label className='mb-2 block text-sm'>Jenis Kelamin</Label>
             <RadioGroup
