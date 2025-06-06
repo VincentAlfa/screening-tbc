@@ -9,7 +9,7 @@ export default function ScreeningSection() {
   return (
     <section className='flex w-full flex-col md:flex-row'>
       <article
-        className={`flex w-full flex-col items-center justify-center bg-gradient-to-b from-green-100 to-green-300 px-4 py-8 text-justify text-base md:w-1/2 md:px-8 md:text-xl lg:px-12 lg:text-2xl ${
+        className={`flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-green-100 to-green-300 px-4 py-8 text-justify text-base md:w-1/2 md:px-8 md:text-xl lg:px-12 lg:text-2xl ${
           isMobile ? 'min-h-[400px] pb-12' : ''
         }`}
       >
