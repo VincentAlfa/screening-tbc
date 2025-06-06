@@ -11,7 +11,10 @@ interface AboutCardProps {
 export function AboutCard({ title, content, className }: AboutCardProps) {
   return (
     <Card
-      className={cn('flex h-full min-h-[350px] w-full flex-col p-0', className)}
+      className={cn(
+        'flex h-full min-h-[350px] w-full flex-col p-0 gap-0 bg-[#DDF6D2] border-0', 
+        className
+      )}
     >
       <CardHeader className='rounded-t-xl bg-[#ECFAE5] p-1'>
         <CardTitle className='text-center text-lg'>{title}</CardTitle>
