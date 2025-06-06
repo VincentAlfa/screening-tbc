@@ -1,10 +1,13 @@
-import { Button } from '@/components/ui/button';
+import AboutSection from './about';
+import ScreeningSection from './screening-section';
+import VideoSection from './video';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello world</h1>
-      <Button />
-    </div>
+    <main className='flex w-full flex-col pt-14'>
+      <ScreeningSection />
+      <AboutSection />
+      <VideoSection />
+    </main>
   );
 }

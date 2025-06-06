@@ -1,8 +1,8 @@
-import { createBrowserRouter } from 'react-router';
+import MainLayout from '@/layout/main-layout';
 import Home from '@/pages/home';
 import Screening from '@/pages/screening';
-import MainLayout from '@/layout/MainLayout';
 import Video from '@/pages/video';
+import { createBrowserRouter } from 'react-router';
 
 export const routes = createBrowserRouter([
   {

@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-primary-green: #6ca74f;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
