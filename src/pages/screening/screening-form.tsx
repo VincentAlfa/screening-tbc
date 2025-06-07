@@ -47,7 +47,13 @@ const screeningFormSchema = z.object({
   no_rumah: z.string().min(1, 'Nomor rumah harus diisi'),
   rt: z.string().min(1, 'RT harus diisi'),
   rw: z.string().min(1, 'RW harus diisi'),
-  no_handphone: z.string().min(1, 'Nomor handphone harus diisi'),
+  no_handphone: z
+    .string()
+    .min(1, 'Nomor handphone harus diisi')
+    .regex(
+      /^\+62[0-9]{9,12}$/,
+      'Format nomor handphone tidak valid (contoh: +628123456789)',
+    ),
   layanan_kesehatan: z.string().min(1, 'Layanan kesehatan harus dipilih'),
 
   batuk_dua_minggu: z.enum(['Ya', 'Tidak']),
