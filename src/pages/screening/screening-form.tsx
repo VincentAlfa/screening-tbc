@@ -25,6 +25,7 @@ import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { cn } from '@/lib/utils';
+import { useNavigate } from 'react-router';
 
 const screeningFormSchema = z.object({
   nama_lengkap: z.string().min(1, 'Nama lengkap harus diisi'),
@@ -84,6 +85,7 @@ export default function ScreeningForm() {
   });
 
   const selectedKecamatan = watch('kecamatan');
+  const navigate = useNavigate();
   useEffect(() => {
     if (selectedKecamatan) {
       setKelurahans(kecamatanKelurahan[selectedKecamatan] || []);
@@ -138,11 +140,7 @@ export default function ScreeningForm() {
 
   const handleDialogClose = () => {
     setIsDialogOpen(false);
-    window.location.reload();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    navigate(0);
   };
 
   return (
