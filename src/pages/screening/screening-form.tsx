@@ -77,7 +77,6 @@ export default function ScreeningForm() {
     handleSubmit,
     setValue,
     watch,
-    reset,
     formState: { errors, isSubmitting },
   } = useForm<ScreeningFormValues>({
     mode: 'onChange',
@@ -139,7 +138,7 @@ export default function ScreeningForm() {
 
   const handleDialogClose = () => {
     setIsDialogOpen(false);
-    reset();
+    window.location.reload();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
