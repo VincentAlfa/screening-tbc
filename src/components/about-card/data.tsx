@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 type TbcInfoItem = {
   title: string;
@@ -30,7 +30,7 @@ export const tbcInfoData: TbcInfoItem[] = [
   {
     title: 'Gejala TBC',
     content: (
-      <ul className='list-disc pl-5 '>
+      <ul className='list-disc pl-5'>
         <li>Batuk berlangsung lebih dari 2 minggu</li>
         <li>Dahak bercampur darah</li>
         <li>Demam dan berkeringat di malam hari</li>
@@ -42,24 +42,24 @@ export const tbcInfoData: TbcInfoItem[] = [
   {
     title: 'Mitos yang Salah Tentang TBC',
     content: (
-      <ul className='list-disc pl-5 '>
-        <li>
+      <div className='flex flex-col gap-2'>
+        <h1>
           Banyak orang masih percaya pada hal-hal yang tidak benar tentang TBC,
           seperti:
-          <ul className='mt-1 list-disc pl-5'>
-            <li>TBC adalah penyakit kutukan atau guna-guna</li>
-            <li>
-              TBC hanya menyerang orang miskin atau yang tinggal di daerah kumuh
-            </li>
-            <li>TBC tidak bisa disembuhkan</li>
-            <li>Pasien TBC harus dijauhi karena sangat menular</li>
-          </ul>
-        </li>
-        <li className='mt-2'>
+        </h1>
+        <ul className='list-disc pl-5'>
+          <li>TBC adalah penyakit kutukan atau guna-guna</li>
+          <li>
+            TBC hanya menyerang orang miskin atau yang tinggal di daerah kumuh
+          </li>
+          <li>TBC tidak bisa disembuhkan</li>
+          <li>Pasien TBC harus dijauhi karena sangat menular</li>
+        </ul>
+        <h1>
           Faktanya, TBC adalah penyakit yang disebabkan oleh bakteri dan dapat
           diobati dengan pengobatan yang tepat. TBC bisa disembuhkan.
-        </li>
-      </ul>
+        </h1>
+      </div>
     ),
   },
   {
@@ -76,5 +76,3 @@ export const tbcInfoData: TbcInfoItem[] = [
     ),
   },
 ];
-
-

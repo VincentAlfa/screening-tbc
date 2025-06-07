@@ -1,4 +1,4 @@
-import type { VideoData } from "@/pages/video/videoData";
+import type { VideoData } from '@/pages/video/videoData';
 
 interface VideoThumbnailProps {
   video: VideoData;
@@ -25,7 +25,7 @@ export default function VideoThumbnail({
           className='h-full w-full object-cover'
         />
       </div>
-      <div className='bg-white p-2'>
+      <div className='h-15 bg-white p-2'>
         <p className='line-clamp-2 text-sm'>{video.title}</p>
       </div>
     </div>

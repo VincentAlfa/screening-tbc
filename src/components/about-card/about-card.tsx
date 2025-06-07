@@ -12,7 +12,7 @@ export function AboutCard({ title, content, className }: AboutCardProps) {
   return (
     <Card
       className={cn(
-        'flex h-full min-h-[350px] w-full flex-col gap-0 border-0 bg-[#DDF6D2] p-0',
+        'flex h-full min-h-[420px] w-full flex-col gap-3 border-0 bg-[#DDF6D2] p-0',
         className,
       )}
     >
